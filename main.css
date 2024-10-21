@@ -1,0 +1,377 @@
+
+/* Hero Section CSS */
+
+.heroWrap {
+    position: relative;
+    max-width: 100%;
+}
+
+
+.heroWrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.heroOverlay {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.heroOverlay h1 {
+    font-size: 50px;
+    color: white;
+    font-family:"Lato", sans-serif;
+    font-weight: 700;
+    padding: 0 40px;
+}
+
+@media (max-width:900px) {
+    .heroOverlay h1 {
+        font-size: 30px;
+    }
+}
+
+
+/*End Hero Section CSS */
+
+
+/* Opening Paragraph CSS */
+
+.topDescriptionContainer {
+    position: relative;
+    margin: 100px 0;
+}
+
+.topDescriptionWrap {
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 60px);
+    height: 100%;
+    max-width: 776px;
+
+}
+
+.topDescriptionContent h2 {
+    font-size: 2em;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    color:#204066;
+}
+
+.topDescriptionContent p{
+    font-size: 1.1em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+/* End Opening Paragraph CSS */ 
+
+/* Heading Label CSS */
+
+.sectionHeadingContainer {
+    position: relative;
+    margin-top:10rem;
+    margin-bottom: 5rem;
+    
+    
+}
+
+.sectionHeadingWrap {
+    position: relative;
+    margin: 0 auto;
+    width: calc(100%-60px);
+    height: 100%;
+    max-width: 776px;
+    text-align: center;
+    
+}
+
+.sectionHeadingWrap h2 {
+    font-family: "Lato",sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #204066 !important
+    
+}
+
+
+
+/* History Section CSS */
+
+
+.timelineMain {
+    position: relative;
+    margin: 45px 0;
+    margin-top: 10rem;
+
+}
+
+
+.timelineMain:before   {
+    content: '';
+   display: block;
+   position: absolute;
+   left: 50%;
+   top: 0%;
+   width: 0;
+   height: 100%;
+   border-left: 1px solid #204066;
+}
+
+
+.timelineWrap {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+}
+
+
+
+.timelineWrap .timelineRow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #204066;
+    background-color: #204066;
+
+}
+
+.timelineRow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.timelineWrap .timelineRow.Reverse {
+    flex-direction: row-reverse;
+}
+
+.timelineRow >* {
+    flex-basis: 43%;
+}
+
+
+
+.timelineImage-auto {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 63%;
+}
+
+.timelineImage-auto img {
+    width: 100%;
+
+}
+.timelineDesc h3 {
+    font-size: 2.1rem;
+    position: relative;
+    bottom: 1.8rem;
+    color: #204066 !important;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+}
+
+.timelineDesc p {
+    font-size: 1em;
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.timelineDesc span {
+    font-size: 1.2em;
+    color: #204066 !important;
+    font-style: italic;
+    font-weight: 800;
+    /*Font family needs to be added*/ 
+    
+    
+}
+@media (max-width: 600px) {
+    .timelineMain:before {
+        display: none;
+    }
+
+
+    .timelineWrap .timelineRow:before {
+        display: none;
+    }
+    
+    
+    .timelineRow {
+        display: block;
+        margin-bottom:10rem ;
+        
+    }
+
+   .timelineDesc {
+    margin-top: 75px;
+   }
+    
+    
+}
+
+
+/* End History Section CSS */
+
+/* Start "Values" Section CSS */
+
+
+.valuesContainer {
+    background-color: #204066;
+}
+
+
+.valuesWrap h1 {
+    color: white !important;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    font-family: "Lato",sans-serif;
+
+}
+
+.valuesContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.valuesCard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 33%;
+    text-align: center;
+    background-color: white !important;
+    margin: 25px;
+    border-radius: 25px;
+}
+
+.valuesCard img {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.valuesCard h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    color: #204066 !important;
+
+}
+
+
+.valuesCard p {
+    padding: 25px;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    color: #204066 !important;
+}
+
+
+
+@media (max-width:1000px) {
+    .valuesContent {
+        flex-direction: column;
+    }
+
+    .valuesCard {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .valuesContent {
+        padding: 0;
+        
+    }
+
+    .valuesCard {
+        margin: 10px;
+    }
+}
+/* End "Values" Section CSS */
+
+/* Start Our Team Section CSS */
+
+
+
+.ourTeamWrap h1 {
+    
+    color: #204066 !important;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+    font-family: "Lato",sans-serif;
+}
+
+.ourTeamContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamProfile {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+
+.profileImage {
+    border: solid 1px #204066 !important;
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.profileImage img {
+    max-width: 150px;
+
+}
+
+.profileDesc {
+    text-align: center;
+    color: #204066 !important;
+    font-family: "Lato",sans-serif;
+}
+
+.profileDesc h3 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.profileDesc p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .ourTeamContent {
+        justify-content: center;
+    }
+}
