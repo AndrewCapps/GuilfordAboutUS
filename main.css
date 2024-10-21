@@ -152,14 +152,14 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 
 @keyframes reveal {
     from {
         opacity: 0;
-        clip-path: inset(45% 20% 45% 20%);
+        clip-path: inset(0% 0% 0% 0% ) 
     }
 
     to {
@@ -173,7 +173,7 @@
     view-timeline-axis: block;
     animation: linear reveal both;
     animation-timeline: --revealRow;
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 25% cover 40%;
 }
 
 .timelineWrap .timelineRow.Reverse {
