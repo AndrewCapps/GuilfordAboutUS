@@ -155,6 +155,27 @@
     margin-bottom: 10rem;
 }
 
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.revealRow {
+    view-timeline-name: --revealRow;
+    view-timeline-axis: block;
+    animation: linear reveal both;
+    animation-timeline: --revealRow;
+    animation-range: entry 25% cover 50%;
+}
+
 .timelineWrap .timelineRow.Reverse {
     flex-direction: row-reverse;
 }
