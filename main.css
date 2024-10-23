@@ -45,6 +45,7 @@
 .topDescriptionContainer {
     position: relative;
     margin: 100px 0;
+    
 }
 
 .topDescriptionWrap {
@@ -56,6 +57,7 @@
 
 }
 
+
 .topDescriptionContent h2 {
     font-size: 2em;
     font-family: "Lato", sans-serif;
@@ -63,10 +65,18 @@
     color:#204066;
 }
 
+.topDescriptionContent h3 {
+    font-size: 1.5rem;
+    font-family: "Lato",sans-serif;
+    font-weight: 600;
+    color: #204066;
+}
+
 .topDescriptionContent p{
     font-size: 1.1em;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    color: #204066;
 }
 
 /* End Opening Paragraph CSS */ 
@@ -75,7 +85,7 @@
 
 .sectionHeadingContainer {
     position: relative;
-    margin-top:10rem;
+    margin-top:15rem;
     margin-bottom: 5rem;
     
     
@@ -349,7 +359,7 @@
 .ourTeamContent {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 80%;
     margin-left: auto;
@@ -391,8 +401,3 @@
     font-size: 14px;
 }
 
-@media (max-width: 650px) {
-    .ourTeamContent {
-        justify-content: center;
-    }
-}
